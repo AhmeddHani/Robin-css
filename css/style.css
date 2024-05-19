@@ -1,0 +1,201 @@
+/* globel style */
+:root
+{
+    --main-color:#ff206e;
+}
+
+
+
+
+
+/* S   t   a   r   t    N   a   v    S   e   c   t   i   o   n  */
+nav .navbar-nav .nav-link.active
+{
+    color: var(--main-color);
+}
+nav .nav-link
+{
+    color: #fff;
+}
+nav .nav-link:focus,nav .nav-link:hover
+{
+    color: var(--main-color);
+}
+
+/* E   n  d    N   a   v    S   e   c   t   i   o   n */
+
+
+/*  S   t   a   r   t    H  e  a   d   e   r     S   e   c   t   i   o   n  */
+
+#home
+{
+    background-image: url(../images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.icon
+{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 3rem;
+    height: 3rem;
+    transition: all 1s;
+}
+.icon:hover
+{
+    border: 1px solid rgba(255, 255, 255,1);
+}
+#home a
+{
+    color: var(--main-color);
+    text-decoration: none;
+}
+/*  E   n  d    H  e  a   d   e   r     S   e   c   t   i   o   n  */
+
+/*  s   t   a   r   t    A   b   o   u   t     S   e   c   t   i   o   n  */
+#about
+{
+    background-image: url(../images/light_dot.jpg);
+}
+
+.header_shadow h2
+{
+    font-size: 4rem;
+    color: #f1f1f1;
+    letter-spacing: 20px;
+}
+.header_shadow h3::after
+{
+    content: "";
+    background-color: var(--main-color);
+    width: 30%;
+    height: 3px;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+}
+
+#about .content p:first-of-type
+{
+   color: var(--main-color);
+}
+
+/*  E   n  d    A   b   o   u   t     S   e   c   t   i   o   n  */
+
+/*  S   t   a   r   t   s   e   r   v  i   c   e   s     S   e   c   t   i   o   n  */
+ #services
+ {
+    background-image: url(../images/dark_dot.jpg);
+ }
+ #services .content_service h3::after
+ {
+    content: "";
+    width: 30%;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 1s;
+ }
+ #services .content_service:hover h3::after
+ {
+    width: 50%;
+ }
+ #services .content_service:hover .icon
+ {
+   color: var(--main-color) !important;
+ }
+/*  E   n  d   s   e   r   v  i   c   e   s     S   e   c   t   i   o   n  */
+
+/*  S   t   a   r   t   S   l   i  d   e   r   S   e   c   t   i   o   n  */
+#slider .carousel-indicators [data-bs-target]
+{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-indent: 0;
+}
+/*  E   n  d   S   l   i  d   e   r   S   e   c   t   i   o   n  */
+
+/*  S   t   a   r   t   N  a   v  &  t   a   b   s   S   e   c   t   i   o   n  */
+#tabs .nav-tabs .nav-link.active
+{
+    border: none;
+    color: var(--main-color);
+}
+#tabs .nav-tabs, #tabs .nav-tabs .nav-link
+{
+    border: none;
+    color: gray;
+}
+/*  E   n  d   N  a   v  &  t   a   b   s    e   c   t   i   o   n  */
+
+
+/* start footer */
+footer
+{
+    background-image: url(../images/dark_dot.jpg);
+    
+}
+footer i,footer a
+{
+    transition: all 0.5s;
+}
+footer i:hover
+{
+    color: var(--main-color);
+}
+
+footer button
+{
+    background-color: var(--main-color) !important;
+}
+
+footer .anchor-hov a:hover
+{
+    color: var(--main-color) !important;
+}
+footer .Robin
+{
+    color: var(--main-color) !important;
+}
+
+/* End footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media Quiryyy */
+@media screen and (max-width: 600px) {
+    html,body {
+      font-size: 12px;
+    }
+    .header_shadow h2
+    {
+        letter-spacing: 10px;
+    }
+
+    #services .content_service h3::after
+    {
+        width: 10%;
+    }
+
+    #services .content_service:hover h3::after
+    {
+       width: 30%;
+    }
+  }
